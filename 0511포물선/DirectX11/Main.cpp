@@ -180,6 +180,7 @@ void Main::Update()
     {
         cc->rotation.x += 3 * ToRadian;
     }
+    //11
     //0.05초마다 3도회전
     //1초마다 60도
     if (GetAsyncKeyState('4') & 0x8000)
