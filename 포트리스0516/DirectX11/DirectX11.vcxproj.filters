@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="DirectX11.cpp" />
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObStar.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObCircle.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObLine.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObRect.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Random.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObStar.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObCircle.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObLine.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObRect.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Random.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{2cc6e1dd-e6f4-4a98-baf1-4515ab4820a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{9cac1a2a-d771-40cd-aa24-83aced896a00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
