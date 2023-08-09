@@ -10,7 +10,7 @@ void GunOperateManager::Init()
 
 void GunOperateManager::Update()
 {
-	
+	ImGui::Text("gunVectorSize %d", GunManager.size());
 	for (vector<Gun*>::iterator it = GunManager.begin(); it != GunManager.end(); it++)
 	{
 		ImGui::Text("gun LocationX %f", (*it)->col->GetWorldPos().x);
@@ -18,11 +18,16 @@ void GunOperateManager::Update()
 
 		if ((*it)->col->Intersect(GM->pl->col))
 		{
-			if (INPUT->KeyDown('E'))
-			{
-				SwapItem(*it);
-				return;
-			}
+				if (INPUT->KeyDown('E'))
+				{
+					if (!(*it)->isEquip)
+					{
+						SwapItem(*it);
+						return;
+					}
+
+				}
+			
 		}
 		
 	}
@@ -48,11 +53,16 @@ void GunOperateManager::SwapItem(Gun* gun)
 	else
 	{
 		Gun* temp = GM->pl->gun1;
-		GM->pl->gun1 = gun;
-		gun = temp;
-		GunManager.push_back(gun);
+		GM->pl->gun1 = move(gun);
+		gun = move(temp);
+		/*GunManager.push_back(gun);*/
 		gun->col->SetWorldPosX(GM->pl->col->GetWorldPos().x);
 		gun->col->SetWorldPosY(GM->pl->col->GetWorldPos().y);
+
+		gun->isEquip = false;
+		GM->pl->gun1->isEquip = true;
+		
+		
 	}
 
 	

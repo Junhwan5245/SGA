@@ -17,7 +17,7 @@ Revolver::Revolver()
 	gunImg->scale.y = gunImg->imageSize.y;
 
 
-
+	cout << "리볼버생성" << endl;
 	
 
 }

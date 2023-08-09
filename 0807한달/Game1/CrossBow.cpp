@@ -16,7 +16,7 @@ CrossBow::CrossBow()
 	gunImg->scale.x = gunImg->imageSize.x;
 	gunImg->scale.y = gunImg->imageSize.y;
 
-
+	cout << "¼®±Ã»ý¼º" << endl;
 
 
 

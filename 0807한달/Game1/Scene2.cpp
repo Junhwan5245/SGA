@@ -87,7 +87,10 @@ void Scene2::Init()
 	}
 	GM->pl->gun1 = new Revolver();
 	GM->pl->gun2 = new Shotgun();
-	
+
+	GM->pl->gun1->isEquip = true;
+	GM->pl->gun2->isEquip = true;
+
 	GM->GunOpreateManager->GunManager.push_back(GM->pl->gun1);
 	GM->GunOpreateManager->GunManager.push_back(GM->pl->gun2);
 
@@ -110,7 +113,6 @@ void Scene2::Update()
 	ImGui::Text("locationy : %f", GM->pl->col->GetWorldPos().y);
 	ImGui::Text("ItemVectorSize : %d", GM->ItemManager.size());
 	ImGui::Text("PlayerHp : %d", GM->pl->Hp);
-	ImGui::Text("CurrentAmmo : %d", GM->pl->gun1->currentBullet);
 	ImGui::Text("EXP : %d", GM->pl->gun1->currentBullet);
 
 

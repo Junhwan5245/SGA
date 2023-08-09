@@ -91,7 +91,7 @@ void Player::Update()
     ImGui::Text("gun1 Y,%d", (int)gun1->gunImg->GetWorldPos().y);
     ImGui::Text("gun2 X,%d", (int)gun2->gunImg->GetWorldPos().x);
     ImGui::Text("gun2 Y,%d", (int)gun2->gunImg->GetWorldPos().y);
-    
+    ImGui::Text("CurrentAmmo : %d", gun1->currentBullet);
     Vector2 tempDir = INPUT->GetWorldMousePos() - GM->pl->col->GetWorldPos();
     
     int xWeight=0;
@@ -342,10 +342,12 @@ void Player::SwapGun()//왼손 오른손 바꾸기
   
     if (gun1 == nullptr || gun2 == nullptr)
         return;
+
     if (gun2->gunImg->reverseLR)
     {
         gun2->gunImg->reverseLR = false;
     }
+    
     
 
     /*  gun2->col->SetLocalPosX(28.0f);

@@ -14,7 +14,7 @@ Shotgun::Shotgun()
 
 	gunImg->scale.x = gunImg->imageSize.x / 1.1;
 	gunImg->scale.y = gunImg->imageSize.y / 1.1;
-	
+	cout << "¼¦°Ç»ý¼º" << endl;
 }
 
 Shotgun::~Shotgun()

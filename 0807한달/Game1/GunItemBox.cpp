@@ -39,6 +39,7 @@ void GunItemBox::CreateItem()
 	if (gunNum == 1)
 	{
 		gun = new Revolver();
+		
 
 	}
 	else if (gunNum == 2)
@@ -50,7 +51,7 @@ void GunItemBox::CreateItem()
 		gun = new CrossBow();
 
 	}
-	
+	gun->Init();
 	gun->col->SetWorldPos(col->GetWorldPos());
 	GM->GunOpreateManager->GunManager.push_back(gun);
 }

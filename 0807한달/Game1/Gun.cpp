@@ -52,21 +52,26 @@ void Gun::Update()
 {
 
 	ImGui::Text("size %d", bullets.size());
+	ImGui::Text("gunImgLocationX %f", gunImg->GetWorldPos().x);
+	ImGui::Text("gunImgLocationY %f", gunImg->GetWorldPos().y);
+	
 
 	/*lookDir = INPUT->GetWorldMousePos() - GM->pl->col->GetWorldPos();*/
 	/*lookDir.Normalize();*/
 	
-
-	if (INPUT->GetWorldMousePos().x < GM->pl->col->GetWorldPos().x)
+	if (isEquip)
 	{
-		gunImg->rotation.x = PI;
-		/*col->SetWorldPosY(5.0f);*/
-	}
-	else
-	{
-		/*col->SetWorldPosY(-5.0f);*/
-		gunImg->rotation.x = 0;
+		if (INPUT->GetWorldMousePos().x < GM->pl->col->GetWorldPos().x)
+		{
+			gunImg->rotation.x = PI;
+			/*col->SetWorldPosY(5.0f);*/
+		}
+		else
+		{
+			/*col->SetWorldPosY(-5.0f);*/
+			gunImg->rotation.x = 0;
 
+		}
 	}
 
 
