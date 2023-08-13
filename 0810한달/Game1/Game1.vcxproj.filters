@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Bullet.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutal.h" />
+    <ClInclude Include="Scene1.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Fish.h" />
+    <ClInclude Include="Crystal.h" />
+    <ClInclude Include="SceneChoice.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Gun.h" />
+    <ClInclude Include="Revolver.h" />
+    <ClInclude Include="RevolverBullet.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="DessertMon1.h" />
+    <ClInclude Include="DessertMon1Bullet.h" />
+    <ClInclude Include="Shotgun.h" />
+    <ClInclude Include="ShotgunBullet.h" />
+    <ClInclude Include="DessertMon2.h" />
+    <ClInclude Include="DessertMon2Bullet.h" />
+    <ClInclude Include="CrossBow.h" />
+    <ClInclude Include="CrossBowBullet.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="HealItem.h" />
+    <ClInclude Include="ItemBox.h" />
+    <ClInclude Include="BulletItem.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="Exp.h" />
+    <ClInclude Include="GunItem.h" />
+    <ClInclude Include="HealItemBox.h" />
+    <ClInclude Include="BulletItemBox.h" />
+    <ClInclude Include="GunItemBox.h" />
+    <ClInclude Include="GunOperateManager.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="BigDog.h" />
+    <ClInclude Include="BigDogBullet.h" />
+    <ClInclude Include="BigDogBullet2.h" />
+    <ClInclude Include="Scene3.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Bullet.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutal.cpp" />
+    <ClCompile Include="Scene1.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene2.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Fish.cpp" />
+    <ClCompile Include="Crystal.cpp" />
+    <ClCompile Include="SceneChoice.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Gun.cpp" />
+    <ClCompile Include="Revolver.cpp" />
+    <ClCompile Include="RevolverBullet.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="DessertMon1.cpp" />
+    <ClCompile Include="DessertMon1Bullet.cpp" />
+    <ClCompile Include="Shotgun.cpp" />
+    <ClCompile Include="ShotgunBullet.cpp" />
+    <ClCompile Include="DessertMon2.cpp" />
+    <ClCompile Include="DessertMon2Bullet.cpp" />
+    <ClCompile Include="CrossBow.cpp" />
+    <ClCompile Include="CrossBowBullet.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="HealItem.cpp" />
+    <ClCompile Include="ItemBox.cpp" />
+    <ClCompile Include="BulletItem.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Exp.cpp" />
+    <ClCompile Include="GunItem.cpp" />
+    <ClCompile Include="HealItemBox.cpp" />
+    <ClCompile Include="BulletItemBox.cpp" />
+    <ClCompile Include="GunItemBox.cpp" />
+    <ClCompile Include="GunOperateManager.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="BigDog.cpp" />
+    <ClCompile Include="BigDogBullet.cpp" />
+    <ClCompile Include="BigDogBullet2.cpp" />
+    <ClCompile Include="Scene3.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{355ff697-d03c-4bdd-bdae-32eee4c60bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{5b144bd8-194a-4f88-a049-3ced9c560a6a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="window.ini" />
+  </ItemGroup>
+</Project>
